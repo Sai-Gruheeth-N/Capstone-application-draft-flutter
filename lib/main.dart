@@ -40,6 +40,25 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         title: Text('Tech Farms'),
       ),
+      body: Container(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              TextButton(
+                style: TextButton.styleFrom(
+                    backgroundColor: Colors.white, primary: Colors.teal),
+                onPressed: () {},
+                child: Text(
+                  'Click here to capture image.',
+                  style: TextStyle(fontSize: 18.0),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
